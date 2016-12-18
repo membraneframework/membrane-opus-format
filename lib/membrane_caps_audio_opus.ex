@@ -4,19 +4,15 @@ defmodule Membrane.Caps.Audio.Opus do
   audio frame.
   """
 
-  @doc """
-  Opus frame duration type.
-
-  2 means 2.5ms, other values just map into duration in miliseconds.
-  """
+  # Opus frame duration type.
+  #
+  # 2 means 2.5ms, other values just map into duration in miliseconds.
   @type frame_duration_t :: 2 | 5 | 10 | 20 | 40 | 60
 
 
-  @doc """
-  Amount of channels inside Opus frame.
-
-  Can be 1 or 2.
-  """
+  # Amount of channels inside Opus frame.
+  #
+  # Can be 1 or 2.
   @type channels_t :: 1 | 2
 
 
