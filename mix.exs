@@ -11,7 +11,7 @@ defmodule Membrane.Caps.Audio.Opus.Mixfile do
      maintainers: ["Marcin Lewandowski"],
      licenses: ["LGPL"],
      name: "Membrane Caps: Audio.Opus",
-     source_url: "https://bitbucket.org/radiokit/membrane-caus-audio-opus",
+     source_url: "https://bitbucket.org/radiokit/membrane-caps-audio-opus",
      preferred_cli_env: [espec: :test],
      deps: deps]
   end

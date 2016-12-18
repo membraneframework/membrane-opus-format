@@ -7,7 +7,7 @@ This package provides definition of caps for Opus-encoded audio.
 Add the following line to your `deps` in `mix.exs`.  Run `mix deps.get`.
 
 ```elixir
-{:membrane_caps_audio_opus, git: "git@bitbucket.org:radiokit/membrane-element-audio-opus.git"}
+{:membrane_caps_audio_opus, git: "git@bitbucket.org:radiokit/membrane-caps-audio-opus.git"}
 ```
 
 # Authors
