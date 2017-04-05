@@ -11,7 +11,7 @@ defmodule Membrane.Caps.Audio.Opus.Mixfile do
      name: "Membrane Caps: Audio.Opus",
      source_url: "https://bitbucket.org/radiokit/membrane-caps-audio-opus",
      preferred_cli_env: [espec: :test],
-     deps: deps]
+     deps: deps()]
   end
 
 

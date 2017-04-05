@@ -16,12 +16,20 @@ defmodule Membrane.Caps.Audio.Opus do
   @type channels_t :: 1 | 2
 
 
+  # Enable/disable inband forward error correction
+  #
+  # Can be true (FEC enabled) or false (FEC disabled)
+  @type enable_fec_t :: boolean
+
+
   @type t :: %Membrane.Caps.Audio.Opus{
     frame_duration: frame_duration_t,
     channels: channels_t,
+    enable_fec: enable_fec_t
   }
 
   defstruct \
     frame_duration: nil,
-    channels: nil
+    channels: nil,
+    enable_fec: nil
 end
