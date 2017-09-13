@@ -22,13 +22,20 @@ defmodule Membrane.Caps.Audio.Opus do
   @type enable_fec_t :: boolean
 
 
+  # Bitrate that was used to encode frame
+  #
+  # Non negative integer, has to be in range <6144, 522240>
+  @type bitrate_t :: non_neg_integer
+
   @type t :: %Membrane.Caps.Audio.Opus{
+    bitrate: bitrate_t,
     frame_duration: frame_duration_t,
     channels: channels_t,
     enable_fec: enable_fec_t
   }
 
   defstruct \
+    bitrate: nil,
     frame_duration: nil,
     channels: nil,
     enable_fec: nil
