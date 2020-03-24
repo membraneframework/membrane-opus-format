@@ -8,8 +8,10 @@ defmodule Membrane.Opus.Description do
   # TODO Support combined multiple frames (up to 120ms).
   @typedoc """
   Opus frame duration in milliseconds.
+
+  Allowed values: `2.5`, `5`, `10`, `20`, `40`, `60`.
   """
-  @type frame_duration_t :: 2_5 | 5 | 10 | 20 | 40 | 60
+  @type frame_duration_t :: float | integer
 
   @typedoc """
   Number of channels transmitted in the stream.
