@@ -5,14 +5,6 @@ defmodule Membrane.Opus.Description do
   Based on [RFC 6716](https://tools.ietf.org/html/rfc6716).
   """
 
-  # TODO Support combined multiple frames (up to 120ms).
-  @typedoc """
-  Opus frame duration in milliseconds.
-
-  Allowed values: `2.5`, `5`, `10`, `20`, `40`, `60`.
-  """
-  @type frame_duration_t :: float | integer
-
   @typedoc """
   Number of channels transmitted in the stream.
   """
@@ -33,14 +25,12 @@ defmodule Membrane.Opus.Description do
 
   @type t :: %__MODULE__{
           bitrate: bitrate_t,
-          frame_duration: frame_duration_t,
           channels: channels_t,
           fec_enabled: fec_enabled_t
         }
 
   @enforce_keys [
     :bitrate,
-    :frame_duration,
     :channels,
     :fec_enabled
   ]
