@@ -1,4 +1,4 @@
-defmodule Membrane.Opus.Description do
+defmodule Membrane.Opus do
   @moduledoc """
   This module implements struct describing an Opus-encoded audio stream.
 
