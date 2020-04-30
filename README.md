@@ -1,4 +1,4 @@
-# Membrane Multimedia Framework: Opus Audio Format Description
+# Membrane OPUS Format
 
 [![Hex.pm](https://img.shields.io/hexpm/v/membrane_opus_format.svg)](https://hex.pm/packages/membrane_opus_format)
 [![API Docs](https://img.shields.io/badge/api-docs-yellow.svg?style=flat)](https://hexdocs.pm/membrane_opus_format/)
