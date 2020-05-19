@@ -11,11 +11,6 @@ defmodule Membrane.Opus do
   @type channels_t :: 1 | 2 | nil
 
   @typedoc """
-  Determines whether the stream is equipped with in-band _Forward Error Correction_ (FEC).
-  """
-  @type fec_available_t :: boolean | nil
-
-  @typedoc """
   Bitrate used to encode the stream in `bit/s`.
 
   Opus supports all bitrates from `6 kbit/s` to `510 kbit/s`,
@@ -25,14 +20,12 @@ defmodule Membrane.Opus do
 
   @type t :: %__MODULE__{
           bitrate: bitrate_t,
-          channels: channels_t,
-          fec_available: fec_available_t
+          channels: channels_t
         }
 
   @enforce_keys [
     :bitrate,
-    :channels,
-    :fec_available
+    :channels
   ]
   defstruct @enforce_keys
 end
