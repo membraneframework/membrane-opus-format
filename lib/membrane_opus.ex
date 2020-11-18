@@ -11,6 +11,14 @@ defmodule Membrane.Opus do
   @type channels_t :: 1 | 2
 
   @typedoc """
+  Determines if stream uses self-delimiting framing.
+
+  Self-delimiting framing provides information necessary to parse
+  uncontainerized Opus stream.
+  """
+  @type self_delimiting_t :: boolean()
+
+  @typedoc """
   Encoder mode used for a given packet.
   """
   @type mode_t :: :silk | :celt | :hybrid
@@ -37,6 +45,7 @@ defmodule Membrane.Opus do
 
   @type t :: %__MODULE__{
           channels: channels_t,
+          self_delimiting?: self_delimiting_t,
           mode: mode_t,
           bandwidth: bandwidth_t,
           frame_size: frame_size_t,
@@ -45,6 +54,7 @@ defmodule Membrane.Opus do
 
   @enforce_keys [
     :channels,
+    :self_delimiting?,
     :mode,
     :bandwidth,
     :frame_size,
