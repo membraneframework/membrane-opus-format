@@ -32,9 +32,9 @@ defmodule Membrane.Opus.Format.Mixfile do
 
   defp deps do
     [
-      {:credo, "~> 1.6.6", runtime: false},
-      {:ex_doc, "~> 0.21.0", only: :dev, runtime: false},
-      {:dialyxir, "~> 1.0", only: :dev, runtime: false}
+      {:credo, ">= 0.0.0", runtime: false},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
+      {:dialyxir, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
@@ -54,7 +54,7 @@ defmodule Membrane.Opus.Format.Mixfile do
   defp package do
     [
       maintainers: ["Membrane Team"],
-      licenses: ["Apache 2.0"],
+      licenses: ["Apache-2.0"],
       links: %{
         "GitHub" => @github_url,
         "Membrane Framework Homepage" => "https://membraneframework.org"
@@ -65,7 +65,7 @@ defmodule Membrane.Opus.Format.Mixfile do
   defp docs do
     [
       main: "readme",
-      extras: ["README.md"],
+      extras: ["README.md", "LICENSE"],
       formatters: ["html"],
       source_ref: "v#{@version}",
       nest_modules_by_prefix: [Membrane.Opus]
